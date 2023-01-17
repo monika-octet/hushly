@@ -161,6 +161,9 @@
 }
 
 /* spacing */
+.hsly-mb-5 {
+    margin-bottom: 5px;
+}
 .hsly-mb-10 {
     margin-bottom: 10px;
 }
@@ -174,7 +177,9 @@
 .hsly-mb-50 {
     margin-bottom: 50px;
 }
-
+.hsly-mt-20 {
+    margin-top: 20px;
+}
 .hsly-mt-30 {
     margin-top: 30px;
 }
@@ -305,6 +310,10 @@
 }
 
 /* button size */
+.hsly-btn{
+    border: none;
+    cursor: pointer;
+}
 .hsly-btn-md,
 .hsly-btn {
     font-weight: 500;
@@ -478,4 +487,17 @@
 
 .plyr--video .plyr__controls{
     padding-top: 10px;
+}
+
+
+.hsly-text-center {
+    text-align: center;
+}
+
+.hsly-text-right {
+    text-align: right;
+}
+
+.hsly-text-left {
+    text-align: left;
 }

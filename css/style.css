@@ -113,9 +113,7 @@ img {
 }
 
 
-.hsly-text-center {
-    text-align: center;
-}
+
 
 .hsly-topic-list {
     margin: 0;
@@ -574,4 +572,66 @@ a {
 }
 .swiper-slide{
     padding: 0 0 1px 0;
+}
+.hsly-video-popup{
+    position: relative;
+}
+.hsly-backdrop{
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
+.hsly-form{
+    background: #FCFCFD;
+    box-shadow: 0px 4px 40px rgba(156, 156, 156, 0.3);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+}
+.hsly-form h3{
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: #101828;
+}
+.hsly-label{
+    font-weight: 500;
+    font-size: 14px;
+    color: #475467;
+    display: block;
+}
+.hsly-input-group{
+    position: relative;
+}
+.hsly-input{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #101828;
+    padding: 12px;
+    border: 1px solid #D0D5DD;
+    background: #FCFCFD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 5px;
+    width: 100%;
+}
+.hsly-input-group .hsly-input{
+    padding-left: 40px;
+}
+.hsly-input-group i{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #667085;
 }

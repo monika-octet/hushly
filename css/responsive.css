@@ -1,9 +1,9 @@
 @media(max-width:767px){
-    .container {
+    .hsly-container {
         width: 100%;
         margin: auto;
     }
-    .div-banner{
+    .hsly-div-banner{
         flex-flow: column;
     }
     .search-input{
@@ -16,18 +16,18 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    .grid-2, .grid-3, .grid-4{
+    .hsly-grid-2, .hsly-grid-3, .hsly-grid-4{
         grid-template-columns: repeat(1, 1fr);
     }
-    .topic-list li a {
+    .hsly-topic-list li a {
         padding: 5px 15px;
         margin-right: 3px;
         margin-bottom: 10px;
     }
-    .grid-2 .card, .single-card{
+    .hsly-grid-2 .hsly-card, .hsly-single-card{
         flex-flow: column;
     }
-    .grid-2 .card img, .single-card img{
+    .hsly-grid-2 .hsly-card img, .hsly-single-card img{
         width: 100%;
         max-width: 100%;
         margin-bottom: 15px;
@@ -35,16 +35,16 @@
     .search-filter-container{
         flex-flow: column;
     }
-    .article-left {
+    .hsly-article-left {
         flex-flow: column;
     }
-    .article-left .left-part, .article-right .left-part{
+    .hsly-article-left .hsly-left-part, .hsly-article-right .hsly-left-part{
         width: 100%;
     }
-    .article-left .right-part, .article-right .right-part{
+    .hsly-article-left .hsly-right-part, .hsly-article-right .hsly-right-part{
         width: 100%;
     }
-    .video-detail{
+    .hsly-video-detail{
         margin-bottom: 30px;
     }
 }

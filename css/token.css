@@ -182,6 +182,9 @@
 .hsly-mt-40 {
     margin-top: 40px;
 }
+.hsly-mt-50 {
+    margin-top: 50px;
+}
 .hsly-mt-60 {
     margin-top: 60px;
 }
@@ -203,7 +206,13 @@
     padding-top: 60px;
 }
 .hsly-pt-70 {
-    padding-top: 60px;
+    padding-top: 70px;
+}
+.hsly-pb-70 {
+    padding-bottom: 70px;
+}
+.hsly-pb-80 {
+    padding-bottom: 80px;
 }
 .hsly-py-40{
     padding-top: 40px !important;
@@ -436,7 +445,9 @@
     height: 75px;
     object-fit: contain;
 }
-
+.hsly-height-100{
+    height: 100%;
+}
 .hsly-card {
     border-radius: 20px;
     padding: 20px;

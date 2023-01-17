@@ -99,10 +99,12 @@ img {
     margin-bottom: 45px;
     display: flex;
 }
-.hsly-single-card p{
+
+.hsly-single-card p {
     margin-top: 8px;
     margin-bottom: 10px;
 }
+
 .hsly-single-card img {
 
     max-width: 35%;
@@ -208,7 +210,8 @@ input:focus {
     cursor: pointer;
     color: var(--hsly-text-primary);
 }
-.btn-filter svg{
+
+.btn-filter svg {
     margin-left: 8px;
 }
 
@@ -337,13 +340,14 @@ input:focus {
     height: 14px;
 
 }
-.hsly-filter-body ul{
+
+.hsly-filter-body ul {
     height: 200px;
     overflow: auto;
 }
 
 
-.hsly-breadcrum li{
+.hsly-breadcrum li {
     display: inline-block;
     list-style-type: none;
     position: relative;
@@ -352,68 +356,84 @@ input:focus {
     font-weight: 500;
     font-size: 14px;
 }
-.hsly-breadcrum li a{
+
+.hsly-breadcrum li a {
     text-decoration: none;
     color: #808080;
     font-weight: 500;
     font-size: 14px;
 }
-.hsly-breadcrum li:after{
+
+.hsly-breadcrum li:after {
     content: url('../images/breadcrum-arrow.svg');
     position: absolute;
-    right:-18px;
+    right: -18px;
 }
-.hsly-breadcrum li:last-child:after{
+
+.hsly-breadcrum li:last-child:after {
     content: '';
 }
-.hsly-breadcrum li a:hover{
+
+.hsly-breadcrum li a:hover {
     color: var(--hsly-text-primary);
 }
 
 
-.hsly-align-items-center{
-    align-items: center;
-}
+
 
 
 /* article */
-.hsly-article-left{
+.hsly-article-left {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.hsly-article-right{
+
+.hsly-article-right {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-.hsly-article-left .hsly-left-part, .hsly-article-right .hsly-left-part{
+
+.hsly-article-left .hsly-left-part,
+.hsly-article-right .hsly-left-part {
     width: calc(100% - 345px);
 }
-.hsly-article-left .hsly-right-part, .hsly-article-right .hsly-right-part{
+
+.hsly-article-left .hsly-right-part,
+.hsly-article-right .hsly-right-part {
     width: 300px;
 }
-.hsly-article-left .hsly-right-part > .hsly-card, .hsly-article-right .hsly-right-part > .hsly-card{
+
+.hsly-article-left .hsly-right-part>.hsly-card,
+.hsly-article-right .hsly-right-part>.hsly-card {
     margin-top: 20px;
 }
-.hsly-article-left .hsly-right-part > .hsly-card:first-of-type, .hsly-article-right .hsly-right-part > .hsly-card:first-of-type{
-    margin-top: 0;
-}
-.hsly-article-left .hsly-right-part.flex-column-reverse > .hsly-card, .hsly-article-right .hsly-right-part.flex-column-reverse > .hsly-card{
-    margin-top: 20px;
-}
-.hsly-article-left .hsly-right-part.flex-column-reverse > .hsly-card:last-of-type, .hsly-article-right .hsly-right-part.flex-column-reverse > .hsly-card:last-of-type{
+
+.hsly-article-left .hsly-right-part>.hsly-card:first-of-type,
+.hsly-article-right .hsly-right-part>.hsly-card:first-of-type {
     margin-top: 0;
 }
 
-.hsly-article-detail p{
+.hsly-article-left .hsly-right-part.flex-column-reverse>.hsly-card,
+.hsly-article-right .hsly-right-part.flex-column-reverse>.hsly-card {
+    margin-top: 20px;
+}
+
+.hsly-article-left .hsly-right-part.flex-column-reverse>.hsly-card:last-of-type,
+.hsly-article-right .hsly-right-part.flex-column-reverse>.hsly-card:last-of-type {
+    margin-top: 0;
+}
+
+.hsly-article-detail p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
 }
-.hsly-rightbar-title{
+
+.hsly-rightbar-title {
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
@@ -421,59 +441,137 @@ input:focus {
     color: #101828;
 }
 
-.hsly-d-flex{
+/* flex classes */
+.hsly-d-flex {
     display: flex;
 }
-.hsly-flex-column{
+
+.hsly-flex-column {
     flex-flow: column;
 }
-.hsly-flex-column-reverse{
+
+.hsly-align-items-center {
+    align-items: center;
+}
+
+.hsly-flex-column-reverse {
     flex-flow: column-reverse;
 }
 
+.hsly-justify-content-between {
+    justify-content: space-between;
+}
+
 /* video */
-.hsly-video-detail{
+.hsly-video-detail {
     background: #F9FAFB;
     border-radius: 20px;
     border: 2px solid #D0D5DD;
     overflow: hidden;
 }
-.hsly-slider-list{
+
+.hsly-slider-list {
     padding: 20px 50px;
     position: relative;
 }
-.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
     content: url('../images/arrow-right.svg');
 }
-.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
-    content:  url('../images/arrow-left.svg');
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+    content: url('../images/arrow-left.svg');
 }
 
-.hsly-recomment-list .hsly-card{
+.hsly-recomment-list .hsly-card {
     margin-top: 15px;
     transition: 0.4s all;
 }
-.hsly-recomment-list .hsly-card:hover{
+
+.hsly-recomment-list .hsly-card:hover, .hsly-slider-list .hsly-card:hover{
     border: 1px solid #101528;
     box-shadow: 0px 4px 40px rgba(45, 52, 66, 0.1);
     border-radius: 10px;
     transition: 0.4s all;
 }
-.hsly-recomment-list img{
+
+.hsly-recomment-list img {
     width: 110px;
     object-fit: contain;
 }
-.hsly-recomment-list p{
+
+.hsly-recomment-list p {
     width: max-content;
 }
-.hsly-recomment-list p:hover{
+
+.hsly-recomment-list p:hover, .hsly-slider-list a p:hover {
     width: max-content;
     text-decoration: underline;
 }
-.hsly-recomment-list a{
+
+.hsly-recomment-list a, .hsly-slider-list a {
     width: max-content;
     line-height: 1;
 }
-a{
+
+a {
     text-decoration: none;
+}
+
+
+
+.hsly-menu-search {
+    position: relative;
+    float: right;
+    overflow: hidden;
+    border: 1px solid #101828;
+    border-radius: 5px;
+}
+
+.hsly-menu-search input {
+    height: 40px;
+    width: 0;
+    padding: 5px 40px 5px 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #667085;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hsly-menu-search input:not(:placeholder-shown),
+.hsly-menu-search input:focus,
+.hsly-menu-search:hover input {
+    width: 200px;
+    padding: 5px 40px 5px 1em;
+    cursor: unset;
+}
+
+.hsly-menu-search .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hsly-menu-search input:not(:placeholder-shown)+.hsly-menu-search .btn {
+    pointer-events: auto;
+}
+
+.hsly-menu-search .btn i {
+    position: relative;
+    top: 8px;
+    left: 12px;
+}
+.swiper-slide{
+    padding: 0 0 1px 0;
 }

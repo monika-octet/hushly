@@ -72,6 +72,8 @@
   margin: 0 auto;
   z-index: 100;
   background: #fff;
+  padding-right: 50px;
+  border-bottom: 1px solid #D0D5DD;
 }
 
 .header .wrapper {
@@ -105,7 +107,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #D0D5DD;
+  
 }
 
 .header-item-right {
@@ -376,7 +378,7 @@
 
   .menu {
     background: #fff;
-    padding: 0 50px;
+    padding: 0 50px 0 30px;
   }
 
   .menu-item {

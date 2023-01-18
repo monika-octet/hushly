@@ -233,12 +233,48 @@
 .hsly-mr-10{
     margin-right: 10px;
 }
+.hsly-mr-20{
+    margin-right: 20px;
+}
+.hsly-mr-30{
+    margin-right: 30px;
+}
+.hsly-mr-40{
+    margin-right: 40px;
+}
+.hsly-mr-50{
+    margin-right: 50px;
+}
 /* margin right */
 .hsly-ml-10{
     margin-left: 10px;
 }
+.hsly-ml-20{
+    margin-left: 20px;
+}
+.hsly-ml-30{
+    margin-left: 30px;
+}
+.hsly-ml-40{
+    margin-left: 40px;
+}
+.hsly-ml-50{
+    margin-left: 50px;
+}
 /* margin top + bottom */
 .hsly-my-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hsly-my-20{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hsly-my-30{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hsly-my-40{
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -246,11 +282,41 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+/* margin left + right */
+.hsly-mx-10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hsly-mx-20{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hsly-mx-30{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hsly-mx-40{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hsly-mx-50 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 /* padding */
 .hsly-p-20{
     padding: 20px;
 }
 /* padding-top */
+.hsly-pt-10 {
+    padding-top: 10px;
+}
+.hsly-pt-20 {
+    padding-top: 20px;
+}
+.hsly-pt-30 {
+    padding-top: 30px;
+}
 .hsly-pt-40 {
     padding-top: 40px;
 }
@@ -263,7 +329,25 @@
 .hsly-pt-70 {
     padding-top: 70px;
 }
+.hsly-pt-80 {
+    padding-top: 80px;
+}
+.hsly-pt-90 {
+    padding-top: 90px;
+}
+.hsly-pt-100 {
+    padding-top: 100px;
+}
 /* padding-bottom */
+.hsly-pb-10 {
+    padding-bottom: 10px;
+}
+.hsly-pb-20 {
+    padding-bottom: 20px;
+}
+.hsly-pb-30 {
+    padding-bottom: 30px;
+}
 .hsly-pb-40 {
     padding-bottom: 40px;
 }
@@ -279,10 +363,24 @@
 .hsly-pb-80 {
     padding-bottom: 80px;
 }
+.hsly-pb-90 {
+    padding-bottom: 90px;
+}
+.hsly-pb-100 {
+    padding-bottom: 100px;
+}
 /* padding top + bottom */
+.hsly-py-10{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
 .hsly-py-20{
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+}
+.hsly-py-30{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
 }
 .hsly-py-40{
     padding-top: 40px !important;
@@ -309,6 +407,42 @@
     padding-bottom: 100px;
 }
 /* padding left + right */
+.hsly-px-10{
+    padding-left: 10px !important;
+    padding-bottom: 10px !important;
+}
+.hsly-px-20{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.hsly-px-30{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.hsly-px-40{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+.hsly-px-50 {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+.hsly-px-60 {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+.hsly-px-70 {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.hsly-px-80 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.hsly-px-90 {
+    padding-left: 90px;
+    padding-right: 90px;
+}
 .hsly-px-100{
     padding-left: 100px;
     padding-right: 100px;
@@ -376,18 +510,18 @@
 }
 
 /* button size */
-.hsly-btn{
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-}
+
 .hsly-btn-md,
 .hsly-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--hsly-text-primary);
 }
 
 .hsly-btn-lg {

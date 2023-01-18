@@ -684,7 +684,7 @@
 }
 
 .menu-item.active a, .menu-item-has-children.active a {
-  color: var(--hsly-text-primary);
+  color: var(--hsly-text-primary) !important;
 }
 .menu-item.active, .menu-item-has-children.active{
   border-bottom:2px solid var(--hsly-text-primary);

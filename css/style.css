@@ -393,14 +393,14 @@ input:focus {
     margin-top: 0;
 }
 
-.hsly-article-left .hsly-right-part.flex-column-reverse>.hsly-card,
-.hsly-article-right .hsly-right-part.flex-column-reverse>.hsly-card {
-    margin-top: 20px;
+.hsly-article-left .hsly-right-part.hsly-flex-column-reverse>.hsly-card,
+.hsly-article-right .hsly-right-part.hsly-flex-column-reverse>.hsly-card {
+    margin-top: 0;
 }
 
-.hsly-article-left .hsly-right-part.flex-column-reverse>.hsly-card:last-of-type,
-.hsly-article-right .hsly-right-part.flex-column-reverse>.hsly-card:last-of-type {
-    margin-top: 0;
+.hsly-article-left .hsly-right-part.hsly-flex-column-reverse>.hsly-card:first-of-type,
+.hsly-article-right .hsly-right-part.hsly-flex-column-reverse>.hsly-card:first-of-type {
+    margin-top: 20px;
 }
 
 .hsly-article-detail p {

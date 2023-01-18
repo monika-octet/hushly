@@ -68,6 +68,9 @@
     .hsly-mobile-none{
         display: none !important;
     }
+    .hsly-width-80{
+        width: 100%;
+    }
 }
 @media(min-width:768px){
     .hsly-desktop-none{

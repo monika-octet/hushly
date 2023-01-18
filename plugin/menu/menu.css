@@ -64,7 +64,7 @@
 
 .header {
   position: sticky;
-  display: block;
+ 
   top: 0;
   left: 0;
   width: 100%;
@@ -350,14 +350,14 @@
 
 
 .menu-item-has-children > a:after {
-  content: url('../images/arrow-down.svg');
+  content: url('images/arrow-down.svg');
   position: absolute;
   top: -1px;
   right: -18px;
 }
 
 .menu-item-has-children:hover > a:after {
-  content: url('../images/arrow-down.svg');
+  content: url('images/arrow-down.svg');
   position: absolute;
   top: -1px;
   right: -18px;

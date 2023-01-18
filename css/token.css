@@ -31,7 +31,7 @@
   
 }
 
-
+/* font-family */
 .hsly-font-primary {
     font-family: var(--hsly-font-primary);
 }
@@ -40,6 +40,7 @@
     font-family: var(--hsly-font-secondary);
 }
 
+/* text-color */
 .hsly-text-primary {
     color: var(--hsly-text-primary);
 }
@@ -52,6 +53,7 @@
     color: var(--hsly-text-light);
 }
 
+/* font-weight */
 .hsly-fw-300 {
     font-weight: 300;
 }
@@ -76,6 +78,7 @@
     font-weight: 800;
 }
 
+/* font-size */
 .hsly-font-12 {
     font-size: 12px;
 }
@@ -161,15 +164,18 @@
 }
 
 /* spacing */
+/* margin-bottom */
 .hsly-mb-5 {
     margin-bottom: 5px;
 }
 .hsly-mb-10 {
     margin-bottom: 10px;
 }
-
 .hsly-mb-20 {
     margin-bottom: 20px;
+}
+.hsly-mb-30 {
+    margin-bottom: 30px;
 }
 .hsly-mb-40{
     margin-bottom: 40px;
@@ -177,13 +183,31 @@
 .hsly-mb-50 {
     margin-bottom: 50px;
 }
+.hsly-mb-60 {
+    margin-bottom: 60px;
+}
+.hsly-mb-70 {
+    margin-bottom: 70px;
+}
+.hsly-mb-80 {
+    margin-bottom: 80px;
+}
+.hsly-mb-90 {
+    margin-bottom: 90px;
+}
+.hsly-mb-100 {
+    margin-bottom: 100px;
+}
+/* margin-top */
+.hsly-mt-10 {
+    margin-top: 10px;
+}
 .hsly-mt-20 {
     margin-top: 20px;
 }
 .hsly-mt-30 {
     margin-top: 30px;
 }
-
 .hsly-mt-40 {
     margin-top: 40px;
 }
@@ -193,9 +217,27 @@
 .hsly-mt-60 {
     margin-top: 60px;
 }
+.hsly-mt-70 {
+    margin-top: 70px;
+}
+.hsly-mt-80 {
+    margin-top: 80px;
+}
+.hsly-mt-90 {
+    margin-top: 90px;
+}
+.hsly-mt-100 {
+    margin-top: 100px;
+}
+/* margin right */
 .hsly-mr-10{
     margin-right: 10px;
 }
+/* margin right */
+.hsly-ml-10{
+    margin-left: 10px;
+}
+/* margin top + bottom */
 .hsly-my-10{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -204,20 +246,28 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+/* padding */
 .hsly-p-20{
     padding: 20px;
 }
+/* padding-top */
 .hsly-pt-60 {
     padding-top: 60px;
 }
 .hsly-pt-70 {
     padding-top: 70px;
 }
+/* padding-bottom */
 .hsly-pb-70 {
     padding-bottom: 70px;
 }
 .hsly-pb-80 {
     padding-bottom: 80px;
+}
+/* padding top + bottom */
+.hsly-py-20{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 .hsly-py-40{
     padding-top: 40px !important;
@@ -243,6 +293,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+/* padding left + right */
 .hsly-px-100{
     padding-left: 100px;
     padding-right: 100px;
@@ -284,7 +335,7 @@
     line-height: 16px;
 }
 
-/* subtext style */
+/* bodytext style */
 .hsly-text-lg {
     font-weight: 600;
     font-size: 16px;
@@ -313,6 +364,8 @@
 .hsly-btn{
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 .hsly-btn-md,
 .hsly-btn {
@@ -345,10 +398,6 @@
 }
 
 /* common */
-.hsly-btn {
-    text-decoration: none;
-    display: inline-block;
-}
 
 .hsly-btn-primary {
     background: var(--hsly-btn-bg-primary);
@@ -389,7 +438,7 @@
     line-height: 28px;
 }
 
-/* grey-classes */
+/* grey-classes for background */
 .hsly-bg-grey-25 {
     background: #FCFCFD;
 }
@@ -437,7 +486,7 @@
     border-right: 1px solid #EEEEEE;
 }
 
-
+/* width */
 .hsly-width-40{
     width: 40%;
 }
@@ -450,6 +499,10 @@
 .hsly-width-70{
     width: 70%;
 }
+.hsly-width-100{
+    width: 100%;
+}
+/* height */
 .hsly-height-75{
     height: 75px;
     object-fit: contain;
@@ -457,6 +510,7 @@
 .hsly-height-100{
     height: 100%;
 }
+/* card */
 .hsly-card {
     border-radius: 20px;
     padding: 20px;
@@ -480,15 +534,12 @@
     background: #F2F4F7;
 }
 
+/* image border */
 .hsly-img-rounded-10{
     border-radius: 10px;
 }
 
-
-.plyr--video .plyr__controls{
-    padding-top: 10px;
-}
-
+/* text alignment */
 
 .hsly-text-center {
     text-align: center;
@@ -500,4 +551,37 @@
 
 .hsly-text-left {
     text-align: left;
+}
+
+/* flex classes */
+.hsly-d-flex {
+    display: flex;
+}
+
+.hsly-flex-column {
+    flex-flow: column;
+}
+
+.hsly-align-items-center {
+    align-items: center;
+}
+
+.hsly-flex-column-reverse {
+    flex-flow: column-reverse;
+}
+
+.hsly-justify-content-between {
+    justify-content: space-between;
+}
+/* tag */
+.hsly-tag{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--hsly-text-primary);
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+.hsly-tag-blue{
+    background:#E0F2FE;;
 }

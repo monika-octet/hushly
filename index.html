@@ -9,7 +9,7 @@
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/5f52f6b93f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/token.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="plugin/menu/menu.css">
    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -258,13 +258,20 @@
             </div>
             <div class="hsly-card hsly-card-bordered hsly-single-card hsly-hover-shadow hsly-hover-bordered">
                 <img src="images/img1.png" alt="">
-                <div>
-                    <h2 class="hsly-header-lg">
-                        Efficient Growth at Scale - A Guidebook for B2B Growth Marketers
-                    </h2>
-                    <p class="hsly-text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero
-                        et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent </p>
-                    <p class="hsly-text-light hsly-font-12 hsly-fw-600">Video</p>
+                <div class="hsly-d-flex hsly-align-items-center hsly-justify-content-between hsly-flex-column hsly-py-20">
+                    <div>
+                        <h2 class="hsly-header-lg">
+                            Efficient Growth at Scale - A Guidebook for B2B Growth Marketers
+                        </h2>
+                        <p class="hsly-text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero
+                            et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent </p>
+                        <p class="hsly-text-light hsly-font-12 hsly-fw-600">Video</p>
+                    </div>
+                    <div class="hsly-d-flex hsly-align-items-center hsly-justify-content-between hsly-width-100">
+                        <span class="hsly-tag hsly-tag-blue">Featured</span>
+                        <a href="" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-btn-icon hsly-icon-right">Read Article <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="hsly-grid-3">
@@ -287,7 +294,7 @@
                             Efficient Growth at Scale - A Guidebook for B2B Growth Marketers
                         </h3>
                         <p class="hsly-text-light hsly-font-12 hsly-fw-600">Video</p>
-                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Read Video <i
+                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Watch Video <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -320,7 +327,7 @@
                             Efficient Growth at Scale - A Guidebook for B2B Growth Marketers
                         </h3>
                         <p class="hsly-text-light hsly-font-12 hsly-fw-600">Video</p>
-                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Read Video <i
+                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Watch Video <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -356,7 +363,7 @@
                             Efficient Growth at Scale - A Guidebook for B2B Growth Marketers
                         </h3>
                         <p class="hsly-text-light hsly-font-12 hsly-fw-600">Video</p>
-                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Read Video <i
+                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Watch Video <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -399,6 +406,7 @@
                     <p class="hsly-font-16 hsly-fw-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero
                         et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent </p>
                     <p class="hsly-text-light hsly-font-12 hsly-fw-600">Video</p>
+                    
                 </div>
             </div>
             <div class="hsly-grid-2">
@@ -421,7 +429,7 @@
                             Efficient Growth at Scale - A Guidebook for B2B Growth Marketers
                         </h3>
                         <p class="hsly-text-light hsly-font-12 hsly-fw-600">Video</p>
-                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Read Video <i
+                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Watch Video <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -454,7 +462,7 @@
                             Efficient Growth at Scale - A Guidebook for B2B Growth Marketers
                         </h3>
                         <p class="hsly-text-light hsly-font-12 hsly-fw-600">Video</p>
-                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Read Video <i
+                        <a href="video.html" class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-mt-30 hsly-btn-icon hsly-icon-right">Watch Video <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -538,7 +546,7 @@
     </section>
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/menu.js"></script>
+    <script src="plugin/menu/menu.js"></script>
     <script>
         $(document).ready(function() {
             $('.btn-filter').click(function(){

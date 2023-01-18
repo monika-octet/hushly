@@ -1,14 +1,18 @@
 *,
-::before,
-::after {
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 body {
     font-family: var(--hsly-font-secondary);
     color: var(--hsly-text-secondary);
     line-height: 1.5rem;
     margin: 0;
+    position: relative;
 }
 
 .hsly-container {
@@ -257,32 +261,7 @@ input:focus {
     list-style-type: none;
 }
 
-/* .checkbox{
-    display: flex;
-    align-items: flex-start;
-    cursor: pointer;
-}
-.checkbox label{
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 16px;
-    color: #475467;
-} */
-/* This css is for normalizing styles. You can skip this. */
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
+/* checkbox */
 .checkbox {
     display: flex;
 }
@@ -439,26 +418,6 @@ input:focus {
     color: #101828;
 }
 
-/* flex classes */
-.hsly-d-flex {
-    display: flex;
-}
-
-.hsly-flex-column {
-    flex-flow: column;
-}
-
-.hsly-align-items-center {
-    align-items: center;
-}
-
-.hsly-flex-column-reverse {
-    flex-flow: column-reverse;
-}
-
-.hsly-justify-content-between {
-    justify-content: space-between;
-}
 
 /* video */
 .hsly-video-detail {
@@ -585,7 +544,7 @@ a {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 9;
+    z-index: 9999;
 }
 .hsly-form{
     background: #FCFCFD;
@@ -598,6 +557,7 @@ a {
     width: 500px;
     margin: auto;
     padding: 30px;
+    z-index: 999999;
 }
 .hsly-form h3{
     font-weight: 700;
@@ -634,4 +594,13 @@ a {
     left: 15px;
     top: 15px;
     color: #667085;
+}
+ .hsly-backdrop{
+    display: none;
+}
+.hsly-form-open .hsly-backdrop{
+    display: block;
+}
+.plyr--video .plyr__controls{
+    padding-top: 10px;
 }

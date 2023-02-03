@@ -125,6 +125,11 @@
         padding: 15px !important;
     }
 
+    .hsly-xs-px-15 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
     .theme2-xs-card h2 {
         font-weight: 800;
         font-size: 14px;
@@ -133,6 +138,10 @@
 
     .theme2-xs-card img {
         min-width: 150px;
+    }
+
+    .hsly-sticky-0 {
+        position: relative;
     }
 }
 

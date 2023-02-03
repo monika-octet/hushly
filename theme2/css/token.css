@@ -912,6 +912,10 @@
     justify-content: space-between;
 }
 
+.hsly-row-reverse {
+    flex-direction: row-reverse;
+}
+
 /* tag */
 .hsly-tag {
     font-weight: 600;

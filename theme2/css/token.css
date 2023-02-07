@@ -726,6 +726,11 @@
     border: 1px solid var(--hsly-btn-border-secondary);
 }
 
+.hsly-btn-outline:hover {
+    border: 1px solid var(--hsly-btn-border-secondary);
+    background: var(--hsly-btn-border-secondary);
+}
+
 /* grey-classes for background */
 .hsly-bg-grey-25 {
     background: #FCFCFD;
@@ -980,4 +985,9 @@ iframe {
 /* color */
 .text-blue {
     color: #175CD3;
+}
+
+/* pointer */
+.pointer {
+    cursor: pointer;
 }

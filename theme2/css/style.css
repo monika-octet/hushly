@@ -237,6 +237,7 @@ input:focus {
     right: 0;
     top: 50px;
     width: 940px;
+    z-index: 1;
 }
 
 .filter-header {
@@ -410,6 +411,13 @@ input:focus {
 .hsly-article-right .hsly-right-part.hsly-flex-column-reverse>.hsly-card:first-of-type {
     margin-top: 20px;
 }
+
+.hsly-article-right .hsly-border-right {
+    border-right: none;
+    border-left: 1px solid #D0D5DD;
+}
+
+
 
 .hsly-article-detail p {
     font-weight: 400;

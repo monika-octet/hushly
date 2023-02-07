@@ -20,6 +20,7 @@
   <body class="hsly-bg-grey-25">
     <div class="hsly-container">
       <!-- main grid -->
+      <!-- hsly-row-reverse to swipe left and right panel -->
       <main
         class="hsly-d-flex hsly-justify-content-between hsly-align-items-start hsly-xs-flex-column"
       >
@@ -108,7 +109,8 @@
               </div>
             </div>
           </section>
-          <div class="search-filter-container hsly-mb-50">
+          <!-- desktop bar start -->
+          <div class="search-filter-container hsly-mb-50 hsly-mobile-none">
             <div class="search-input">
               <input type="text" placeholder="Find Resources" />
               <div class="search-icon">
@@ -352,8 +354,326 @@
               </div>
             </div>
           </div>
-          <!-- filter end -->
+          <!-- desktop bar end -->
+
+          <!-- mobile bar end-->
+
           <section>
+            <!-- mobile bar start-->
+            <div
+              class="hsly-d-flex hsly-justify-content-between hsly-mb-30 hsly-desktop-none"
+            >
+              <div>
+                <img
+                  src="images/xs-menu.svg"
+                  alt=""
+                  class="pointer xs-menu-icon"
+                />
+
+                <div class="xs-menu" style="display: none">
+                  <div
+                    class="hsly-d-flex hsly-justify-content-between hsly-mb-30"
+                  >
+                    <h4 class="hsly-header-xl">Filter</h4>
+                    <img
+                      src="images/xs-close.svg"
+                      alt=""
+                      class="cancel pointer"
+                    />
+                  </div>
+                  <div class="hsly-topic-list-panel-title">Topics</div>
+                  <div class="hsly-mt-20">
+                    <div class="hsly-topic-wrap">
+                      <h4>Advertising</h4>
+                      <ul style="display: none">
+                        <li><a href="">Finances</a></li>
+                        <li><a href="">Tech</a></li>
+                        <li><a href="">Research</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Development</a></li>
+                      </ul>
+                    </div>
+                    <div class="hsly-topic-wrap">
+                      <h4>Agencies</h4>
+                      <ul style="display: none">
+                        <li><a href="">Stream Item 1</a></li>
+                        <li><a href="">Stream Item 2</a></li>
+                        <li><a href="">Stream Item 3</a></li>
+                        <li><a href="">Stream Item 4</a></li>
+                        <li><a href="">Stream Item 5</a></li>
+                      </ul>
+                    </div>
+                    <div class="hsly-topic-wrap">
+                      <h4>Industries</h4>
+                      <ul style="display: none">
+                        <li><a href="">Stream Item 1</a></li>
+                        <li><a href="">Stream Item 2</a></li>
+                        <li><a href="">Stream Item 3</a></li>
+                        <li><a href="">Stream Item 4</a></li>
+                        <li><a href="">Stream Item 5</a></li>
+                      </ul>
+                    </div>
+                    <div class="hsly-topic-wrap">
+                      <h4>Ecommerce</h4>
+                      <ul style="display: none">
+                        <li><a href="">Stream Item 1</a></li>
+                        <li><a href="">Stream Item 2</a></li>
+                        <li><a href="">Stream Item 3</a></li>
+                        <li><a href="">Stream Item 4</a></li>
+                        <li><a href="">Stream Item 5</a></li>
+                      </ul>
+                    </div>
+                    <div class="hsly-topic-wrap">
+                      <h4>Education</h4>
+                      <ul style="display: none">
+                        <li><a href="">Stream Item 1</a></li>
+                        <li><a href="">Stream Item 2</a></li>
+                        <li><a href="">Stream Item 3</a></li>
+                        <li><a href="">Stream Item 4</a></li>
+                        <li><a href="">Stream Item 5</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  src="images/xs-search.svg"
+                  alt=""
+                  class="pointer xs-search-icon"
+                />
+                <img
+                  src="images/xs-filter.svg"
+                  alt=""
+                  class="pointer xs-filter-icon"
+                />
+              </div>
+              <div class="xs-input" style="display: none">
+                <input
+                  type="text"
+                  class="xs-input-control"
+                  placeholder="Keyword to search"
+                />
+                <img
+                  src="images/xs-input-close.svg"
+                  alt=""
+                  class="xs-input-close"
+                />
+              </div>
+              <!-- filter mobile start -->
+              <div class="multiple-filter xs-filter" style="display: none">
+                <div
+                  class="filter-header hsly-d-flex hsly-justify-content-between hsly-align-items-center"
+                >
+                  <h4 class="hsly-header-md">Filter</h4>
+                  <img
+                    src="images/xs-close.svg"
+                    alt=""
+                    class="cancel pointer"
+                  />
+                </div>
+                <div class="filter-body hsly-grid-4">
+                  <div class="hsly-p-20 hsly-border-right">
+                    <h4 class="hsly-text-sm hsly-text-light">Industries</h4>
+                    <ul class="list-unstyled">
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="1"
+                            name="1"
+                            value="1"
+                          /><label for="1"> Accounting Firms</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="2"
+                            name="2"
+                            value="2"
+                          /><label for="2"> Bio Tech and Life Sciences</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="3"
+                            name="3"
+                            value="3"
+                          /><label for="3"> Financial Services</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="4"
+                            name="4"
+                            value="4"
+                          /><label for="4"> Franchise</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="5"
+                            name="5"
+                            value="5"
+                          /><label for="5"> Education</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="hsly-p-20 hsly-border-right">
+                    <h4 class="hsly-text-sm hsly-text-light">Products</h4>
+                    <ul class="list-unstyled">
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="6"
+                            name="6"
+                            value="6"
+                          /><label for="6"> Accounting AI</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="7"
+                            name="7"
+                            value="7"
+                          /><label for="7"> Financial Management</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="8"
+                            name="8"
+                            value="8"
+                          /><label for="8"> Budgetting and Planning</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="hsly-p-20 hsly-border-right">
+                    <h4 class="hsly-text-sm hsly-text-light">Content Types</h4>
+                    <ul class="list-unstyled">
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="9"
+                            name="9"
+                            value="9"
+                          /><label for="9"> Whitepaper</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="10"
+                            name="10"
+                            value="10"
+                          /><label for="10"> Blog</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="11"
+                            name="11"
+                            value="11"
+                          /><label for="11"> Ebooks</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="12"
+                            name="12"
+                            value="12"
+                          /><label for="12"> News</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="13"
+                            name="13"
+                            value="13"
+                          /><label for="13"> Data Sheets</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="hsly-p-20">
+                    <h4 class="hsly-text-sm hsly-text-light">Capabilities</h4>
+                    <ul class="list-unstyled">
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="14"
+                            name="14"
+                            value="14"
+                          /><label for="14"> Consersational Ai</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="15"
+                            name="15"
+                            value="15"
+                          /><label for="15"> Automation</label>
+                        </div>
+                      </li>
+                      <li class="hsly-my-10">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            id="16"
+                            name="16"
+                            value="16"
+                          /><label for="16"> Ticket AI</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter-footer">
+                  <div>
+                    <a
+                      href="#"
+                      class="hsly-btn hsly-btn-secondary hsly-btn-circle hsly-btn-sm"
+                      >Reset</a
+                    >
+                  </div>
+                  <div>
+                    <a href="#" class="hsly-btn hsly-btn-sm cancel">Cancel</a>
+                    <a
+                      href="#"
+                      class="hsly-btn hsly-btn-primary hsly-btn-circle hsly-btn-sm"
+                      >Apply Filter</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- filter mobile end-->
             <div class="hsly-single-card">
               <div class="relative hsly-mr-20 hsly-xs-mr-0">
                 <img src="images/img1.png" alt="" />
@@ -379,9 +699,9 @@
                     mattis. Class aptent taciti sociosqu ad litora torquent
                   </p>
                   <a
-                    href=""
+                    href="ebook.html"
                     class="hsly-btn hsly-btn-secondary hsly-btn-icon hsly-icon-right hsly-mt-10"
-                    >Read Article <i class="fa-solid fa-arrow-right"></i
+                    >Read eBook <i class="fa-solid fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
@@ -404,7 +724,7 @@
               </div>
               <div>
                 <a
-                  href="stream.html"
+                  href="article.html"
                   class="hsly-mobile-none hsly-btn hsly-btn-secondary hsly-btn-rounded hsly-btn-icon hsly-icon-right"
                   >Read Article <i class="fa-solid fa-arrow-right"></i
                 ></a>
@@ -427,7 +747,7 @@
               </div>
               <div>
                 <a
-                  href="stream.html"
+                  href="ebook.html"
                   class="hsly-mobile-none hsly-btn hsly-btn-secondary hsly-btn-rounded hsly-btn-icon hsly-icon-right"
                   >Read eBook <i class="fa-solid fa-arrow-right"></i
                 ></a>
@@ -450,7 +770,7 @@
               </div>
               <div>
                 <a
-                  href="stream.html"
+                  href="video.html"
                   class="hsly-mobile-none hsly-btn hsly-btn-secondary hsly-btn-rounded hsly-btn-icon hsly-icon-right"
                   >Watch Video <i class="fa-solid fa-arrow-right"></i
                 ></a>
@@ -501,7 +821,7 @@
               </div>
               <div>
                 <a
-                  href="stream.html"
+                  href="article.html"
                   class="hsly-mobile-none hsly-btn hsly-btn-secondary hsly-btn-rounded hsly-btn-icon hsly-icon-right"
                   >Read Article <i class="fa-solid fa-arrow-right"></i
                 ></a>
@@ -524,7 +844,7 @@
               </div>
               <div>
                 <a
-                  href="stream.html"
+                  href="ebook.html"
                   class="hsly-mobile-none hsly-btn hsly-btn-secondary hsly-btn-rounded hsly-btn-icon hsly-icon-right"
                   >Read eBook <i class="fa-solid fa-arrow-right"></i
                 ></a>
@@ -547,7 +867,7 @@
               </div>
               <div>
                 <a
-                  href="stream.html"
+                  href="video.html"
                   class="hsly-mobile-none hsly-btn hsly-btn-secondary hsly-btn-rounded hsly-btn-icon hsly-icon-right"
                   >Watch Video <i class="fa-solid fa-arrow-right"></i
                 ></a>
@@ -556,7 +876,7 @@
             <!-- load more -->
             <div class="hsly-text-center">
               <a
-                href="stream.html"
+                href="#"
                 class="hsly-btn hsly-btn-secondary hsly-btn-md hsly-btn-rounded hsly-mt-20 hsly-icon-right"
                 >Load More
               </a>
@@ -687,6 +1007,29 @@
       $(document).ready(function () {
         $(".btn-filter").click(function () {
           $(".multiple-filter").toggle();
+        });
+        $(".xs-filter-icon").click(function () {
+          $(".xs-filter").toggle();
+        });
+        $(".xs-menu-icon").click(function () {
+          $(".xs-menu").toggle();
+        });
+        $(".cancel").click(function (e) {
+          e.preventDefault();
+          $(".multiple-filter").hide();
+          $(".xs-filter").hide();
+          $(".xs-menu").hide();
+        });
+
+        $(".xs-search-icon").click(function () {
+          $(".xs-input").toggle();
+        });
+        $(".xs-input-close").click(function () {
+          $(".xs-input").toggle();
+        });
+        $(".hsly-topic-wrap h4").click(function () {
+          $(this).toggleClass("active");
+          $(this).next("ul").slideToggle();
         });
       });
     </script>

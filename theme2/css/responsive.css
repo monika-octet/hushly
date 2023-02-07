@@ -130,6 +130,14 @@
         padding-right: 15px !important;
     }
 
+    .hsly-xs-pt-0 {
+        padding-top: 0px;
+    }
+
+    .hsly-xs-pt-50 {
+        padding-top: 50px;
+    }
+
     .theme2-xs-card h2 {
         font-weight: 800;
         font-size: 14px;
@@ -142,6 +150,76 @@
 
     .hsly-sticky-0 {
         position: relative;
+    }
+
+    .hsly-inner-container {
+        width: calc(100% - 40px);
+    }
+
+    .hsly-article-left .hsly-border-right,
+    .hsly-article-right .hsly-border-right {
+        border: none;
+    }
+
+    /* filter */
+    .multiple-filter {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .filter-body {
+        height: calc(100vh - 140px);
+        overflow: auto;
+        grid-gap: 0;
+    }
+
+    .filter-header {
+        padding: 10px 15px;
+    }
+
+    /* menu */
+    .xs-menu {
+        background: #fff;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99;
+        padding: 30px;
+        height: 100vh;
+        overflow: auto;
+    }
+
+    /* search input */
+    .xs-input {
+        position: absolute;
+        width: calc(100% - 15px);
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fcfcfd;
+    }
+
+    .xs-input-control {
+        border-radius: 45px;
+        border: 1px solid #D0D5DD;
+        padding: 15px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        color: #101828;
+
+    }
+
+    .xs-input-close {
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        cursor: pointer;
     }
 }
 

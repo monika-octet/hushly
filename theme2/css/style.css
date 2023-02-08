@@ -238,6 +238,7 @@ input:focus {
     top: 50px;
     width: 940px;
     z-index: 1;
+    display: none;
 }
 
 .filter-header {
@@ -704,6 +705,11 @@ a {
 .hsly-topic-wrap ul {
     list-style-type: none;
     padding-left: 20px;
+    display: none;
+}
+
+.hsly-topic-wrap ul.hsly-d-block {
+    display: block;
 }
 
 .hsly-topic-wrap ul li a {
@@ -712,5 +718,16 @@ a {
     line-height: 24px;
     color: #667085;
     margin: 14px 0;
+    display: block;
+}
+
+.xs-input,
+.xs-filter,
+.xs-menu {
+    display: none;
+}
+
+/* block */
+.hsly-d-block {
     display: block;
 }

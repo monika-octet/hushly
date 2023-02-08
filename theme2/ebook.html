@@ -183,45 +183,5 @@
         >Get Pricing</a
       >
     </section>
-
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="plugin/menu/menu.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".btn-filter").click(function () {
-          $(".multiple-filter").toggle();
-        });
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        loop: true,
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-          // when window width is >= 320px
-          540: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          // when window width is >= 480px
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          // when window width is >= 640px
-          992: {
-            slidesPerView: 2.3,
-            spaceBetween: 15,
-          },
-        },
-      });
-    </script>
   </body>
 </html>

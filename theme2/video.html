@@ -98,7 +98,7 @@
                     </div>
                   </div>
                   <div
-                    id="player"
+                    id="hsly-player"
                     data-plyr-provider="youtube"
                     data-plyr-embed-id="2KzfrAupM0A"
                   ></div>
@@ -227,47 +227,11 @@
         </div>
       </div>
     </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="plugin/menu/menu.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".btn-filter").click(function () {
-          $(".multiple-filter").toggle();
-        });
-      });
-    </script>
-    <script src="plugin/swiper-bundle/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        loop: true,
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          // when window width is >= 320px
-          540: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          // when window width is >= 480px
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          // when window width is >= 640px
-          992: {
-            slidesPerView: 2.3,
-            spaceBetween: 15,
-          },
-        },
-      });
-    </script>
+
+    <!-- video plugin -->
     <script src="plugin/plyr/plyr.polyfilled.js"></script>
     <script>
-      const player = new Plyr("#player");
+      const hslyplayer = new Plyr("#hsly-player");
     </script>
   </body>
 </html>

@@ -51,7 +51,7 @@
             <div class="hsly-mt-20">
               <div class="hsly-topic-wrap">
                 <h4>Advertising</h4>
-                <ul style="display: none">
+                <ul>
                   <li><a href="">Finances</a></li>
                   <li><a href="">Tech</a></li>
                   <li><a href="">Research</a></li>
@@ -61,7 +61,7 @@
               </div>
               <div class="hsly-topic-wrap">
                 <h4>Agencies</h4>
-                <ul style="display: none">
+                <ul>
                   <li><a href="">Stream Item 1</a></li>
                   <li><a href="">Stream Item 2</a></li>
                   <li><a href="">Stream Item 3</a></li>
@@ -71,7 +71,7 @@
               </div>
               <div class="hsly-topic-wrap">
                 <h4>Industries</h4>
-                <ul style="display: none">
+                <ul>
                   <li><a href="">Stream Item 1</a></li>
                   <li><a href="">Stream Item 2</a></li>
                   <li><a href="">Stream Item 3</a></li>
@@ -81,7 +81,7 @@
               </div>
               <div class="hsly-topic-wrap">
                 <h4>Ecommerce</h4>
-                <ul style="display: none">
+                <ul>
                   <li><a href="">Stream Item 1</a></li>
                   <li><a href="">Stream Item 2</a></li>
                   <li><a href="">Stream Item 3</a></li>
@@ -91,7 +91,7 @@
               </div>
               <div class="hsly-topic-wrap">
                 <h4>Education</h4>
-                <ul style="display: none">
+                <ul>
                   <li><a href="">Stream Item 1</a></li>
                   <li><a href="">Stream Item 2</a></li>
                   <li><a href="">Stream Item 3</a></li>
@@ -143,7 +143,7 @@
                     />
                   </svg>
                 </div>
-                <div class="multiple-filter" style="display: none">
+                <div class="multiple-filter">
                   <div class="filter-header">Filter</div>
                   <div class="filter-body hsly-grid-4">
                     <div class="hsly-p-20 hsly-border-right">
@@ -361,7 +361,7 @@
                   class="pointer xs-menu-icon"
                 />
 
-                <div class="xs-menu" style="display: none">
+                <div class="xs-menu">
                   <div
                     class="hsly-d-flex hsly-justify-content-between hsly-mb-30"
                   >
@@ -369,14 +369,14 @@
                     <img
                       src="images/xs-close.svg"
                       alt=""
-                      class="cancel pointer"
+                      class="xs-menu-cancel pointer"
                     />
                   </div>
                   <div class="hsly-topic-list-panel-title">Topics</div>
                   <div class="hsly-mt-20">
                     <div class="hsly-topic-wrap">
                       <h4>Advertising</h4>
-                      <ul style="display: none">
+                      <ul>
                         <li><a href="">Finances</a></li>
                         <li><a href="">Tech</a></li>
                         <li><a href="">Research</a></li>
@@ -386,7 +386,7 @@
                     </div>
                     <div class="hsly-topic-wrap">
                       <h4>Agencies</h4>
-                      <ul style="display: none">
+                      <ul>
                         <li><a href="">Stream Item 1</a></li>
                         <li><a href="">Stream Item 2</a></li>
                         <li><a href="">Stream Item 3</a></li>
@@ -396,7 +396,7 @@
                     </div>
                     <div class="hsly-topic-wrap">
                       <h4>Industries</h4>
-                      <ul style="display: none">
+                      <ul>
                         <li><a href="">Stream Item 1</a></li>
                         <li><a href="">Stream Item 2</a></li>
                         <li><a href="">Stream Item 3</a></li>
@@ -406,7 +406,7 @@
                     </div>
                     <div class="hsly-topic-wrap">
                       <h4>Ecommerce</h4>
-                      <ul style="display: none">
+                      <ul>
                         <li><a href="">Stream Item 1</a></li>
                         <li><a href="">Stream Item 2</a></li>
                         <li><a href="">Stream Item 3</a></li>
@@ -416,7 +416,7 @@
                     </div>
                     <div class="hsly-topic-wrap">
                       <h4>Education</h4>
-                      <ul style="display: none">
+                      <ul>
                         <li><a href="">Stream Item 1</a></li>
                         <li><a href="">Stream Item 2</a></li>
                         <li><a href="">Stream Item 3</a></li>
@@ -439,7 +439,7 @@
                   class="pointer xs-filter-icon"
                 />
               </div>
-              <div class="xs-input" style="display: none">
+              <div class="xs-input">
                 <input
                   type="text"
                   class="xs-input-control"
@@ -452,7 +452,7 @@
                 />
               </div>
               <!-- filter mobile start -->
-              <div class="multiple-filter xs-filter" style="display: none">
+              <div class="multiple-filter xs-filter">
                 <div
                   class="filter-header hsly-d-flex hsly-justify-content-between hsly-align-items-center"
                 >
@@ -460,7 +460,7 @@
                   <img
                     src="images/xs-close.svg"
                     alt=""
-                    class="cancel pointer"
+                    class="xs-filter-cancel pointer"
                   />
                 </div>
                 <div class="filter-body hsly-grid-4">
@@ -1182,37 +1182,61 @@
       >
     </section>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="plugin/menu/menu.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".btn-filter").click(function () {
-          $(".multiple-filter").toggle();
-        });
-        $(".xs-filter-icon").click(function () {
-          $(".xs-filter").toggle();
-        });
-        $(".xs-menu-icon").click(function () {
-          $(".xs-menu").toggle();
-        });
-        $(".cancel").click(function (e) {
-          e.preventDefault();
-          $(".multiple-filter").hide();
-          $(".xs-filter").hide();
-          $(".xs-menu").hide();
-        });
+    <script type="text/javascript">
+      // desktop filter toggle
+      var btnFilter = document.querySelector(".btn-filter");
+      var multipleFilter = document.querySelector(".multiple-filter");
 
-        $(".xs-search-icon").click(function () {
-          $(".xs-input").toggle();
-        });
-        $(".xs-input-close").click(function () {
-          $(".xs-input").toggle();
-        });
-        $(".hsly-topic-wrap h4").click(function () {
-          $(this).toggleClass("active");
-          $(this).next("ul").slideToggle();
-        });
-      });
+      btnFilter.onclick = function () {
+        multipleFilter.classList.toggle("hsly-d-block");
+      };
+
+      // mobile filter toggle
+      var btnXsFilter = document.querySelector(".xs-filter-icon");
+      var xsFilter = document.querySelector(".xs-filter");
+      var xsFilterCancel = document.querySelector(".xs-filter-cancel");
+
+      btnXsFilter.onclick = function () {
+        xsFilter.classList.toggle("hsly-d-block");
+      };
+      xsFilterCancel.onclick = function () {
+        xsFilter.classList.toggle("hsly-d-block");
+      };
+
+      // mobile menu toggle
+      var btnXsMenu = document.querySelector(".xs-menu-icon");
+      var xsMenu = document.querySelector(".xs-menu");
+      var xsMenuCancel = document.querySelector(".xs-menu-cancel");
+
+      btnXsMenu.onclick = function () {
+        xsMenu.classList.toggle("hsly-d-block");
+      };
+      xsMenuCancel.onclick = function () {
+        xsMenu.classList.toggle("hsly-d-block");
+      };
+      // mobile search toggle
+      var btnXsSearch = document.querySelector(".xs-search-icon");
+      var xsSearch = document.querySelector(".xs-input");
+      var xsSearchCancel = document.querySelector(".xs-input-close");
+
+      btnXsSearch.onclick = function () {
+        xsSearch.classList.toggle("hsly-d-block");
+      };
+      xsSearchCancel.onclick = function () {
+        xsSearch.classList.toggle("hsly-d-block");
+      };
+      // menu open
+      var menuTitle = document.querySelectorAll(".hsly-topic-wrap h4");
+      if (menuTitle) {
+        for (const x of menuTitle) {
+          x.addEventListener("click", function () {
+            this.classList.toggle("active");
+
+            var menuUl = this.nextElementSibling;
+            menuUl.classList.toggle("hsly-d-block");
+          });
+        }
+      }
     </script>
   </body>
 </html>

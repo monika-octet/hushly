@@ -25,7 +25,6 @@
 
     /* plyr.css */
     --plyr-color-main: #101828;
-
     --plyr-video-controls-background: #FFFFFF;
     --plyr-video-control-background-hover: #FFFFFF;
     --plyr-video-control-color: #101828;
@@ -919,6 +918,11 @@
 
 .hsly-row-reverse {
     flex-direction: row-reverse;
+}
+
+/* block */
+.hsly-d-block {
+    display: block;
 }
 
 /* tag */
